@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Q6-yIex99UiDYmgbG_KtPw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="web.whatsapp.com" CVScreenId="bada13fa-3626-4414-9685-882d58ec3e0e" CvElementArea="491, 664, 869, 53" CvType="InputBox" DesignTimeRectangle="508, 678, 24, 24" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;footer&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;button&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span' parentid='main' tag='SPAN' /&gt;" Guid="dbdb139c-6e03-4f4e-8092-717b15c74ea5" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(35) WhatsApp' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="bada13fa-3626-4414-9685-882d58ec3e0e" CvElementArea="491, 664, 869, 53" CvType="InputBox" DesignTimeRectangle="548, 678, 24, 24" FuzzySelectorArgument="&lt;webctrl type='' class='xxk0z11 xvy4d1p' parentid='main' tag='SPAN' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='wds-ic-sticker-smiley' /&gt;" Guid="095ac0a1-2e41-436c-94c9-6fe86c2fc437" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="2cd0b04a251daff2512b05817b0f6500.jpg" xmlns="">0gRMKV4GZdU-KsBm97Lx94A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

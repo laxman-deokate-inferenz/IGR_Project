@@ -1,0 +1,13 @@
+﻿{
+  "Name": "wds-ic-sticker-smiley(1)",
+  "Type": "Element",
+  "Id": "tYXmRe0xe0GC_9JNsUwbfQ",
+  "Reference": "q-cv-y4mSESjSFDGWyXq3w/tYXmRe0xe0GC_9JNsUwbfQ",
+  "ParentRef": "q-cv-y4mSESjSFDGWyXq3w/ow6fy8Dcnka1mNUx7yqRfw",
+  "Created": "2026-03-19T09:22:06.4220568Z",
+  "Updated": "2026-03-19T09:22:06.4220568Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

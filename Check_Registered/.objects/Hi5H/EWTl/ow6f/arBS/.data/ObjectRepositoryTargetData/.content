@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="pyL6_gAupEqztLj1zv9OAg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="web.whatsapp.com" CVScreenId="5d598d1d-ea67-4bdd-944a-31ef2475cdcd" CvTextArea="481, 390, 68, 15" CvTextArgument="Document" CvType="Text" DesignTimeRectangle="483, 389, 102, 20" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Document' parentid='app' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Document' parentid='app' tag='SPAN' type='' class='x140p0ai x1gufx9m x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x193iq5w xeuugli x13faqbe x1vvkbs x1lliihq x1fj9vlw x14ug900 x87ps6o x1f6kntn xjb2p0i x8r4c90 xo1l8bm x1ic7a3i x12xpedu' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Document' /&gt;" Guid="8cf7f77c-5593-41c0-b990-282e876bffff" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(8) WhatsApp' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="5d598d1d-ea67-4bdd-944a-31ef2475cdcd" CvElementArea="452, 388, 20, 22" CvType="Icon" DesignTimeRectangle="454, 390, 18, 18" FuzzySelectorArgument="&lt;webctrl type='' parentid='app' tag='SPAN' class='x19mqsdy' aaname='' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='ic-description-filled' /&gt;" Guid="6920da39-6109-4e5f-afce-7af26cdffcca" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEKSURBVEhL5ZRNS0JBFIb9ta3c5EIsgiAkVExrVS0kIhCDIBRUhDJKKCFKaXFJsERa9Af8QEGeuJxF3jM3GtIS6YF3MR/nYWbgTIBfIqAn5sXfiQc9cB7hqmCmXoX3N13hjyG+v4Z4CDZX/HOchm5bV5kY4puSKXOzE4ZMAnbX4SgJnZau9GItTq/JbRq3Ij/chtaTrv7EWpyKwEMNJhNo3sHehtyg7WiDYC2OBqFwAq/P8OJAKQexVajmtUGwFn+Vi3NtEBYjLmZh2PeuDwdQOZtRvL8F5VNvk7jjg+iMYpv8SPzPn+K7T2g6iRDUL7VBMMTjkXSXe3L9bU6nVpZ2dvf7YYjnxfKJPwCHi+p7u+y6GAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="914dea28eaebb25de08bbf5a433b8291.png" xmlns="">06XEk7McVyEeNK6Bib55Ctw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

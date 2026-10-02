@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="6Yr_WB6f50GAqM1NkjFu7Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="ilovepdf.com/merge_pdf" CVScreenId="3dc53f4f-ff4f-4c21-9892-1b82537f54ae" CvElementArea="1341, 18, 20, 19" CvType="CloseButton" DesignTimeRectangle="1328, 8, 46, 40" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='Merge PDF files online. Free service to merge PDF - Microsoft Ed*' role='pane' /&gt;&lt;ctrl name='Close' role='push button' /&gt;" Guid="a48fa78b-acde-449a-8123-f429e7e2dd97" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='Merge PDF files online. Free service to merge PDF and 1 more pag*' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="3dc53f4f-ff4f-4c21-9892-1b82537f54ae" CvElementArea="1295, 18, 19, 19" CvType="MaximizeButton" DesignTimeRectangle="1282, 8, 46, 40" ElementType="Button" FuzzySelectorArgument="&lt;ctrl name='Merge PDF files online. Free service to merge PDF - Microsoft Ed*' role='pane' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Restore' role='push button' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='Restore' /&gt;" Guid="cd174881-e2f1-414b-a0fc-3829b2c95652" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="dc971758ad4b37d7a647c34c0406cd09.png" xmlns="">0qQii83bkVUaSDHo_o6aniA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

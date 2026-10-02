@@ -1,0 +1,13 @@
+﻿{
+  "Name": "ic-mood",
+  "Type": "Element",
+  "Id": "shRva4H-k0KEAntsKj5KZg",
+  "Reference": "q-cv-y4mSESjSFDGWyXq3w/shRva4H-k0KEAntsKj5KZg",
+  "ParentRef": "q-cv-y4mSESjSFDGWyXq3w/ow6fy8Dcnka1mNUx7yqRfw",
+  "Created": "2026-03-18T19:02:09.2742477Z",
+  "Updated": "2026-03-18T19:02:09.2742477Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.22.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

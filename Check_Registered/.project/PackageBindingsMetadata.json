@@ -28,22 +28,6 @@
         "DefaultValueSource": "Property"
       }
     ],
-    "UiPath.Core.Activities.AddAndProcessQueueItem": [
-      {
-        "Type": "queue",
-        "Values": {
-          "name": {
-            "Value": "QueueType",
-            "ValueSource": "Property"
-          },
-          "folderPath": {
-            "Value": "FolderPath",
-            "ValueSource": "Property"
-          }
-        },
-        "DefaultValueSource": "Default"
-      }
-    ],
     "UiPath.Core.Activities.AddQueueItem": [
       {
         "Type": "queue",
@@ -100,22 +84,6 @@
         "DefaultValueSource": "Property"
       }
     ],
-    "UiPath.Core.Activities.BeginProcess": [
-      {
-        "Type": "process",
-        "Values": {
-          "name": {
-            "Value": "ProcessName",
-            "ValueSource": "Property"
-          },
-          "folderPath": {
-            "Value": "FolderPath",
-            "ValueSource": "Property"
-          }
-        },
-        "DefaultValueSource": "Default"
-      }
-    ],
     "UiPath.Core.Activities.BulkAddQueueItems": [
       {
         "Type": "queue",
@@ -144,18 +112,6 @@
         "DefaultValueSource": "Property"
       }
     ],
-    "UiPath.Core.Activities.DeleteQueueItems": [
-      {
-        "Type": "queue",
-        "Values": {
-          "folderPath": {
-            "Value": "FolderPath",
-            "ValueSource": "Property"
-          }
-        },
-        "DefaultValueSource": "Default"
-      }
-    ],
     "UiPath.Core.Activities.EvaluateBusinessRule": [
       {
         "Type": "businessRule",
@@ -182,18 +138,6 @@
         },
         "SubBindings": [],
         "DefaultValueSource": "Property"
-      }
-    ],
-    "UiPath.Core.Activities.GetJobs": [
-      {
-        "Type": "process",
-        "Values": {
-          "folderPath": {
-            "Value": "FolderPath",
-            "ValueSource": "Property"
-          }
-        },
-        "DefaultValueSource": "Default"
       }
     ],
     "UiPath.Core.Activities.GetQueueItem": [
@@ -336,22 +280,6 @@
         "DefaultValueSource": "Property"
       }
     ],
-    "UiPath.Core.Activities.GetTransactionItem": [
-      {
-        "Type": "queue",
-        "Values": {
-          "name": {
-            "Value": "QueueType",
-            "ValueSource": "Property"
-          },
-          "folderPath": {
-            "Value": "FolderPath",
-            "ValueSource": "Property"
-          }
-        },
-        "DefaultValueSource": "Default"
-      }
-    ],
     "UiPath.Core.Activities.InvokeProcess": [
       {
         "Type": "process",
@@ -378,18 +306,6 @@
         },
         "SubBindings": [],
         "DefaultValueSource": "Property"
-      }
-    ],
-    "UiPath.Core.Activities.PostponeTransactionItem": [
-      {
-        "Type": "queue",
-        "Values": {
-          "folderPath": {
-            "Value": "FolderPath",
-            "ValueSource": "Property"
-          }
-        },
-        "DefaultValueSource": "Default"
       }
     ],
     "UiPath.Core.Activities.QueueTrigger": [
@@ -516,30 +432,6 @@
         "DefaultValueSource": "Property"
       }
     ],
-    "UiPath.Core.Activities.SetTransactionProgress": [
-      {
-        "Type": "queue",
-        "Values": {
-          "folderPath": {
-            "Value": "FolderPath",
-            "ValueSource": "Property"
-          }
-        },
-        "DefaultValueSource": "Default"
-      }
-    ],
-    "UiPath.Core.Activities.SetTransactionStatus": [
-      {
-        "Type": "queue",
-        "Values": {
-          "folderPath": {
-            "Value": "FolderPath",
-            "ValueSource": "Property"
-          }
-        },
-        "DefaultValueSource": "Default"
-      }
-    ],
     "UiPath.Core.Activities.StartJob": [
       {
         "Type": "process",
@@ -566,18 +458,6 @@
         },
         "SubBindings": [],
         "DefaultValueSource": "Property"
-      }
-    ],
-    "UiPath.Core.Activities.StopJob": [
-      {
-        "Type": "process",
-        "Values": {
-          "folderPath": {
-            "Value": "FolderPath",
-            "ValueSource": "Property"
-          }
-        },
-        "DefaultValueSource": "Default"
       }
     ],
     "UiPath.Core.Activities.Storage.DeleteStorageFile": [
@@ -2976,7 +2856,7 @@
                 "Value": "BrowserLocationBindingId",
                 "ValueSource": "Property"
               },
-              "ParentDriveId": {
+              "ParentDriveID": {
                 "Value": "DriveId",
                 "ValueSource": "Property"
               }
@@ -3000,6 +2880,10 @@
               },
               "PrimaryKey": {
                 "Value": "ParentID",
+                "ValueSource": "Constant"
+              },
+              "TriggerCreateParameters": {
+                "Value": "ParentDriveID",
                 "ValueSource": "Constant"
               }
             },
@@ -3067,7 +2951,7 @@
                 "Value": "BrowserLocationBindingId",
                 "ValueSource": "Property"
               },
-              "ParentDriveId": {
+              "ParentDriveID": {
                 "Value": "DriveId",
                 "ValueSource": "Property"
               }
@@ -3091,6 +2975,10 @@
               },
               "PrimaryKey": {
                 "Value": "ParentID",
+                "ValueSource": "Constant"
+              },
+              "TriggerCreateParameters": {
+                "Value": "ParentDriveID",
                 "ValueSource": "Constant"
               }
             },
@@ -3158,7 +3046,7 @@
                 "Value": "BrowserLocationBindingId",
                 "ValueSource": "Property"
               },
-              "ParentDriveId": {
+              "ParentDriveID": {
                 "Value": "DriveId",
                 "ValueSource": "Property"
               }
@@ -3182,6 +3070,119 @@
               },
               "PrimaryKey": {
                 "Value": "ParentID",
+                "ValueSource": "Constant"
+              },
+              "TriggerCreateParameters": {
+                "Value": "ParentDriveID",
+                "ValueSource": "Constant"
+              }
+            },
+            "SubBindings": [],
+            "DefaultValueSource": "Property"
+          }
+        ],
+        "DefaultValueSource": "Property"
+      }
+    ],
+    "UiPath.GSuite.Activities.FileFolderExistsConnections": [
+      {
+        "Type": "Connection",
+        "PublishNullValues": false,
+        "Key": {
+          "Value": "BindingsKey",
+          "ValueSource": "Property"
+        },
+        "Values": {
+          "ConnectionId": {
+            "Value": "ConnectionId",
+            "ValueSource": "Property"
+          }
+        },
+        "Arguments": {
+          "BindingsVersion": {
+            "Value": "2.2",
+            "ValueSource": "Constant"
+          },
+          "Connector": {
+            "Value": "Connector",
+            "ValueSource": "Property"
+          },
+          "UseConnectionService": {
+            "Value": "UseConnectionService",
+            "ValueSource": "Property"
+          }
+        },
+        "SubBindings": [
+          {
+            "Type": "Property",
+            "PublishNullValues": false,
+            "Key": {
+              "Value": "ResourceKey",
+              "ValueSource": "Property"
+            },
+            "Values": {
+              "FullName": {
+                "Value": "BrowserItemFriendlyName",
+                "ValueSource": "Property"
+              },
+              "ID": {
+                "Value": "BrowserItemId",
+                "ValueSource": "Property"
+              }
+            },
+            "Arguments": {
+              "ActivityName": {
+                "Value": "DisplayName",
+                "ValueSource": "Property"
+              },
+              "BindingsVersion": {
+                "Value": "2.1",
+                "ValueSource": "Constant"
+              },
+              "ObjectName": {
+                "Value": "ObjectName",
+                "ValueSource": "Property"
+              },
+              "DisplayLabel": {
+                "Value": "FullName",
+                "ValueSource": "Constant"
+              }
+            },
+            "SubBindings": [],
+            "DefaultValueSource": "Property"
+          },
+          {
+            "Type": "Property",
+            "PublishNullValues": false,
+            "Key": {
+              "Value": "RelativePathBindingsKey",
+              "ValueSource": "Property"
+            },
+            "Values": {
+              "FullName": {
+                "Value": "ParentIdFriendlyName",
+                "ValueSource": "Property"
+              },
+              "ID": {
+                "Value": "ParentId",
+                "ValueSource": "Property"
+              }
+            },
+            "Arguments": {
+              "ActivityName": {
+                "Value": "DisplayName",
+                "ValueSource": "Property"
+              },
+              "BindingsVersion": {
+                "Value": "2.1",
+                "ValueSource": "Constant"
+              },
+              "ObjectName": {
+                "Value": "ParentFolderObjectName",
+                "ValueSource": "Property"
+              },
+              "DisplayLabel": {
+                "Value": "FullName",
                 "ValueSource": "Constant"
               }
             },
@@ -3784,7 +3785,7 @@
                 "Value": "FormId",
                 "ValueSource": "Property"
               },
-              "ParentDriveId": {
+              "ParentDriveID": {
                 "Value": "DriveId",
                 "ValueSource": "Property"
               }
@@ -3879,7 +3880,7 @@
                 "Value": "FormId",
                 "ValueSource": "Property"
               },
-              "ParentDriveId": {
+              "ParentDriveID": {
                 "Value": "DriveId",
                 "ValueSource": "Property"
               }
@@ -7030,7 +7031,7 @@
                 "Value": "BrowserItemId",
                 "ValueSource": "Property"
               },
-              "ParentDriveId": {
+              "ParentDriveID": {
                 "Value": "DriveId",
                 "ValueSource": "Property"
               },
@@ -7175,7 +7176,7 @@
                 "Value": "BrowserItemId",
                 "ValueSource": "Property"
               },
-              "ParentDriveId": {
+              "ParentDriveID": {
                 "Value": "DriveId",
                 "ValueSource": "Property"
               },
@@ -7324,7 +7325,7 @@
                 "Value": "BrowserItemId",
                 "ValueSource": "Property"
               },
-              "ParentDriveId": {
+              "ParentDriveID": {
                 "Value": "DriveId",
                 "ValueSource": "Property"
               },
@@ -12623,6 +12624,123 @@
               "ObjectName": {
                 "Value": "CuratedFile",
                 "ValueSource": "Constant"
+              },
+              "DisplayLabel": {
+                "Value": "FullName",
+                "ValueSource": "Constant"
+              }
+            },
+            "SubBindings": [],
+            "DefaultValueSource": "Property"
+          }
+        ],
+        "DefaultValueSource": "Property"
+      }
+    ],
+    "UiPath.MicrosoftOffice365.Activities.Files.FileFolderExistsConnections": [
+      {
+        "Type": "Connection",
+        "PublishNullValues": false,
+        "Key": {
+          "Value": "BindingsKey",
+          "ValueSource": "Property"
+        },
+        "Values": {
+          "ConnectionId": {
+            "Value": "ConnectionId",
+            "ValueSource": "Property"
+          }
+        },
+        "Arguments": {
+          "BindingsVersion": {
+            "Value": "2.2",
+            "ValueSource": "Constant"
+          },
+          "Connector": {
+            "Value": "Connector",
+            "ValueSource": "Property"
+          },
+          "UseConnectionService": {
+            "Value": "UseConnectionService",
+            "ValueSource": "Property"
+          }
+        },
+        "SubBindings": [
+          {
+            "Type": "Property",
+            "PublishNullValues": false,
+            "Key": {
+              "Value": "ResourceKey",
+              "ValueSource": "Property"
+            },
+            "Values": {
+              "FullName": {
+                "Value": "BrowserItemFriendlyName",
+                "ValueSource": "Property"
+              },
+              "ID": {
+                "Value": "BrowserItemId",
+                "ValueSource": "Property"
+              },
+              "ParentDriveID": {
+                "Value": "BrowserDriveId",
+                "ValueSource": "Property"
+              }
+            },
+            "Arguments": {
+              "ActivityName": {
+                "Value": "DisplayName",
+                "ValueSource": "Property"
+              },
+              "BindingsVersion": {
+                "Value": "2.1",
+                "ValueSource": "Constant"
+              },
+              "ObjectName": {
+                "Value": "CuratedFile",
+                "ValueSource": "Constant"
+              },
+              "DisplayLabel": {
+                "Value": "FullName",
+                "ValueSource": "Constant"
+              }
+            },
+            "SubBindings": [],
+            "DefaultValueSource": "Property"
+          },
+          {
+            "Type": "Property",
+            "PublishNullValues": false,
+            "Key": {
+              "Value": "RelativePathBindingsKey",
+              "ValueSource": "Property"
+            },
+            "Values": {
+              "FullName": {
+                "Value": "BrowserParentItemFriendlyName",
+                "ValueSource": "Property"
+              },
+              "ID": {
+                "Value": "BrowserParentItemId",
+                "ValueSource": "Property"
+              },
+              "ParentDriveID": {
+                "Value": "BrowserParentDriveId",
+                "ValueSource": "Property"
+              }
+            },
+            "Arguments": {
+              "ActivityName": {
+                "Value": "DisplayName",
+                "ValueSource": "Property"
+              },
+              "BindingsVersion": {
+                "Value": "2.1",
+                "ValueSource": "Constant"
+              },
+              "ObjectName": {
+                "Value": "ParentFolderObjectName",
+                "ValueSource": "Property"
               },
               "DisplayLabel": {
                 "Value": "FullName",

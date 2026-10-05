@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Import Data & Exit",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "Ty285pvERkK8A2U_0RdNVw",
+  "Reference": "XYDNlefXLUawOcBond9NIg/Ty285pvERkK8A2U_0RdNVw",
+  "ParentRef": "XYDNlefXLUawOcBond9NIg/hLJPHSS9sEKoRnjhbSaWbA",
+  "Created": "2026-10-03T18:39:20.1448822Z",
+  "Updated": "2026-10-03T18:39:20.1448822Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

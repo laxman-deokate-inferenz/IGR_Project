@@ -1,0 +1,11 @@
+**/bin/
+**/obj/
+**/.local/
+**/packages/
+*.nupkg
+*.user
+*.suo
+*.log
+*.tmp
+*.bak
+IGR_Master/.local-chromium/

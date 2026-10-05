@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-b9G8u_PAkSOptPM3Ta1qQ" Reference="q-cv-y4mSESjSFDGWyXq3w/o1Utx8qzSk28rWl6FU4azw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="web.whatsapp.com" CVScreenId="4e1c9398-0984-41bc-b550-362159cdca36" DesignTimeRectangle="139, 202, 323, 22" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='P' type='' class='_aupe copyable-text x15bjb6t x1n2onr6' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="6cdf66a6-fa07-4f7e-9348-ba48faf42e83" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(8) WhatsApp' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="4e1c9398-0984-41bc-b550-362159cdca36" CvElementArea="92, 244, 369, 41" CvType="InputBox" DesignTimeRectangle="107, 203, 20, 20" FuzzySelectorArgument="&lt;webctrl parentid='side' tag='SPAN' type='' class='' aaname='' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='search-refreshed-thin' /&gt;" Guid="592cfac3-f591-4251-9e07-43c137f4df97" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="c8adce3289db93f04ec49e4cac6459f7.png" xmlns="">06PKZyROHtUCISUXeXljwNA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="F8yMb9TthkiUVMj-e96yrQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="web.whatsapp.com" CVScreenId="d3744eed-2780-4675-bcad-d0cca0a19de9" CvElementArea="800, 453, 111, 45" CvTextArea="825, 465, 60, 16" CvTextArgument="Use here" CvType="Button" DesignTimeRectangle="800, 453, 110, 44" ElementType="Button" ElementVisibilityArgument="Interactive" Guid="e8f3a63f-4c44-4ec6-9839-04e0809a1fb0" ScopeSelectorArgument="&lt;html app='chrome.exe' title='WhatsApp' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="d3744eed-2780-4675-bcad-d0cca0a19de9" CvTextArea="740, 466, 39, 15" CvTextArgument="Close" CvType="Text" DesignTimeRectangle="740, 466, 39, 14" ElementType="Text" Guid="4ec89a65-9fc0-4c1a-bd5c-befef29129ff" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="15e3a87d2b0ea8bddc1714b46ed9f242.png" xmlns="">0TGxnyRgYX0Gc15W9kreVZQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

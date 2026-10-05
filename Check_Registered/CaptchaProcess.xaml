@@ -1,0 +1,497 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="CaptchaProcess" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:isactr="http://schemas.uipath.com/workflow/integration-service-activities/isactr" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/intelligentocr" xmlns:p1="http://schemas.uipath.com/workflow/activities/ocr" xmlns:p2="http://schemas.uipath.com/workflow/activities/document-processing-contracts/dom" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uiascb="clr-namespace:UiPath.IntegrationService.Activities.SWEntities.CA7E05AC10A_v2_sub_generateChatCompletion_Create.Bundle;assembly=CA7E05AC10A_v2_sub_g.EVOVU3kNCzH1FPsb22E8b2Z2" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
+    <x:Property Name="CaptchaText" Type="OutArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>CaptchaProcess_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.IntelligentOCR.Activities.Digitization</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.Dom</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models.FilterBuilder</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Helpers.TypeDetailsCustomization</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Activities</x:String>
+      <x:String>UiPath.Platform.Activities</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.Taxonomy</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.Results</x:String>
+      <x:String>UiPath.IntelligentOCR.Activities.DocumentClassification</x:String>
+      <x:String>UiPath.IntegrationService.Activities.SWEntities.C2529FCCAC3_v2_sub_generateChatCompletion_Create.Bundle</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>CA7E05AC10A_v2_sub_g.fURGW1Srv6J1Wx8VY1hEqoq1</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.DocumentProcessing.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.DocumentUnderstanding.ML.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.IntegrationService.Activities.Runtime</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>C2529FCCAC3_v2_sub_g.8xUXm2UrsgA1Gbyblh43bg4</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="CaptchaProcess" sap:VirtualizedContainerService.HintSize="692,4058" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:TimeSpan" Name="timeTaken" />
+      <Variable x:TypeArguments="s:DateTime" Name="endTime" />
+      <Variable x:TypeArguments="p2:Document" Name="DOM" />
+      <Variable x:TypeArguments="s:DateTime" Name="startTime" />
+      <Variable x:TypeArguments="x:String" Name="aiText" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge Main Page(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="686,4035.3333333333335" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" ScopeGuid="9baddecb-926b-4803-996c-bb8c4f62d516" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="684,3840.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="Sequence-Captcha Process" sap:VirtualizedContainerService.HintSize="650,3614.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NTakeScreenshot DisplayName="Take Screenshot 'IMG'" FileName="Captcha.png" FileNameMode="[UiPath.UIAutomationNext.Enums.NFileNameMode.None]" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="616,280.6666666666667" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_1" ScopeIdentifier="9baddecb-926b-4803-996c-bb8c4f62d516" Version="V5" />
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="616,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_4" Message="[&quot;Screenshot Taken&quot;]" />
+              <Assign sap:VirtualizedContainerService.HintSize="616,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_6">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="s:DateTime">[startTime]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="s:DateTime">[now]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="616,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_10" Message="[&quot;Digitization Started&quot;]" />
+              <p:DigitizeDocument ApplyOcrMigrated="True" ApplyOcrOnPdf="Auto" DegreeOfParallelism="-1" DetectCheckboxes="True" DisplayName="Digitize Document" DocumentObjectModel="[DOM]" DocumentPath="[path.Combine(Directory.GetCurrentDirectory(),&quot;Captcha.png&quot;)]" DocumentText="[captchaText]" ForceApplyOCR="False" sap:VirtualizedContainerService.HintSize="616,339.3333333333333" sap2010:WorkflowViewState.IdRef="DigitizeDocument_1">
+                <p:DigitizeDocument.OCREngine>
+                  <ActivityFunc x:TypeArguments="sd:Image, x:String, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                    <ActivityFunc.Argument1>
+                      <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                    </ActivityFunc.Argument1>
+                    <ActivityFunc.Argument2>
+                      <DelegateInArgument x:TypeArguments="x:String" Name="PredictionId" />
+                    </ActivityFunc.Argument2>
+                    <p1:UiPathDocumentOCR Endpoint="{x:Null}" Output="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zpfykwnwMY9rectvHu7GZLXC+Kw9flfsAm6DFblqeyhiMFzhlm5UDsRYChe24N0PGOrCUbO3i9nlzEeomZ8f6Q==" ComputeSkewAngle="False" DisplayName="UiPath Document OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="312,25.333333333333332" sap2010:WorkflowViewState.IdRef="UiPathDocumentOCR_1" Image="[Image]" Language="auto" NoopExecution="False" PredictionId="[PredictionId]" Profile="None" Scale="1" Timeout="100000" UseSeparateOcrProcess="False" />
+                  </ActivityFunc>
+                </p:DigitizeDocument.OCREngine>
+              </p:DigitizeDocument>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="616,57.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="484,108" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Sequence DisplayName="Time Calculation" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_7">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="s:DateTime">[endTime]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="s:DateTime">[now]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_8">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:TimeSpan">[timeTaken]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:TimeSpan">[endTime-startTime]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_8" Message="[&quot;Time Taken for Image Digitization: &quot;+timeTaken.ToString]" />
+                    </Sequence>
+                  </Sequence>
+                </ui:CommentOut.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:CommentOut>
+              <Assign sap:VirtualizedContainerService.HintSize="616,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_11">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="s:DateTime">[startTime]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="s:DateTime">[now]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <isactr:ConnectorActivity Configuration="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" ConnectionId="d4693297-4791-4bb1-aaa4-35a7e05ac10a" DisplayName="Content Generation" sap:VirtualizedContainerService.HintSize="616,428" sap2010:WorkflowViewState.IdRef="ConnectorActivity_1" UiPathActivityTypeId="aba52a00-4c05-318d-8f99-5ad924b2f277">
+                <isactr:ConnectorActivity.FieldObjects>
+                  <isactr:FieldObject Name="prompt" Type="FieldArgument">
+                    <isactr:FieldObject.Value>
+                      <InArgument x:TypeArguments="x:String">["please extact 5 digit code from given iamge however it is repeated twice but yoy give me only once.Please dont give any extra text or special characters"+captchaText]</InArgument>
+                    </isactr:FieldObject.Value>
+                  </isactr:FieldObject>
+                  <isactr:FieldObject Name="isPIIEnabled" Type="FieldArgument">
+                    <isactr:FieldObject.Value>
+                      <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                    </isactr:FieldObject.Value>
+                  </isactr:FieldObject>
+                  <isactr:FieldObject Name="isFilterPIIEnabled" Type="FieldArgument" />
+                  <isactr:FieldObject Name="languageCode" Type="FieldArgument" />
+                  <isactr:FieldObject Name="piiEntityCategories_array" Type="FieldArgument" />
+                  <isactr:FieldObject Name="confidenceThreshold" Type="FieldArgument" />
+                  <isactr:FieldObject Name="topK" Type="FieldArgument" />
+                  <isactr:FieldObject Name="contextGrounding" Type="FieldArgument">
+                    <isactr:FieldObject.Value>
+                      <InArgument x:TypeArguments="x:String">None</InArgument>
+                    </isactr:FieldObject.Value>
+                  </isactr:FieldObject>
+                  <isactr:FieldObject Name="_file" Type="FieldArgument" />
+                  <isactr:FieldObject Name="folderKey" Type="FieldArgument" />
+                  <isactr:FieldObject Name="topP" Type="FieldArgument" />
+                  <isactr:FieldObject Name="indexID" Type="FieldArgument" />
+                  <isactr:FieldObject Name="max_tokens" Type="FieldArgument" />
+                  <isactr:FieldObject Name="temperature" Type="FieldArgument" />
+                  <isactr:FieldObject Name="frequency_penalty" Type="FieldArgument" />
+                  <isactr:FieldObject Name="numberOfResults" Type="FieldArgument" />
+                  <isactr:FieldObject Name="presence_penalty" Type="FieldArgument" />
+                  <isactr:FieldObject Name="n" Type="FieldArgument" />
+                  <isactr:FieldObject Name="top_p" Type="FieldArgument" />
+                  <isactr:FieldObject Name="_stop" Type="FieldArgument" />
+                  <isactr:FieldObject Name="modelName" Type="FieldArgument">
+                    <isactr:FieldObject.Value>
+                      <InArgument x:TypeArguments="x:String">gpt-5.2-2025-12-11</InArgument>
+                    </isactr:FieldObject.Value>
+                  </isactr:FieldObject>
+                  <isactr:FieldObject Name="instruction" Type="FieldArgument">
+                    <isactr:FieldObject.Value>
+                      <InArgument x:TypeArguments="x:String">You are a helpful assistant</InArgument>
+                    </isactr:FieldObject.Value>
+                  </isactr:FieldObject>
+                  <isactr:FieldObject Name="out_text" Type="FieldArgument">
+                    <isactr:FieldObject.Value>
+                      <OutArgument x:TypeArguments="x:String">[aiText]</OutArgument>
+                    </isactr:FieldObject.Value>
+                  </isactr:FieldObject>
+                  <isactr:FieldObject Name="out_maskedText" Type="FieldArgument">
+                    <isactr:FieldObject.Value>
+                      <OutArgument x:TypeArguments="x:String" />
+                    </isactr:FieldObject.Value>
+                  </isactr:FieldObject>
+                  <isactr:FieldObject Name="Jit_v2_sub_generateChatCompletion" Type="FieldArgument">
+                    <isactr:FieldObject.Value>
+                      <OutArgument x:TypeArguments="uiascb:v2_sub_generateChatCompletion_Create" />
+                    </isactr:FieldObject.Value>
+                  </isactr:FieldObject>
+                  <isactr:FieldObject Name="out_contextGroundingCitationsString" Type="FieldArgument">
+                    <isactr:FieldObject.Value>
+                      <OutArgument x:TypeArguments="x:String" />
+                    </isactr:FieldObject.Value>
+                  </isactr:FieldObject>
+                </isactr:ConnectorActivity.FieldObjects>
+              </isactr:ConnectorActivity>
+              <Sequence DisplayName="Time Calculation" sap:VirtualizedContainerService.HintSize="452,608" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Assign sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_9">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="s:DateTime">[endTime]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="s:DateTime">[now]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <Assign sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_10">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:TimeSpan">[timeTaken]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:TimeSpan">[endTime-startTime]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_9" Message="[&quot;Time Taken for Content Generation: &quot;+timeTaken.ToString]" />
+              </Sequence>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="LogMessage_6" Message="[&quot;Pre-Captcha Ready: &quot;+aiText]" />
+              <Assign sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="Assign_3">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[captchaText]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[aiText]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <If Condition="[CaptchaText.Length&lt;5]" sap:VirtualizedContainerService.HintSize="452,753" sap2010:WorkflowViewState.IdRef="If_1">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <If.Then>
+                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,397" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_7" Message="[&quot;Adjustment Done&quot;]" />
+                    <If Condition="[CaptchaText.Length=4]" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="If_2">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <If.Then>
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,226" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="Assign_1">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[CaptchaText]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">["0"+CaptchaText]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,94" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                    <If Condition="[CaptchaText.Length=3]" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="If_3">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <If.Then>
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,234" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="Assign_4">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[CaptchaText]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">["00"+CaptchaText]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                    <If Condition="[CaptchaText.Length=2]" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="If_4">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <If.Then>
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,234" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="Assign_5">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[CaptchaText]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">["000"+CaptchaText]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,226" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;No Adjustment for Captcha: &quot;+CaptchaText]" />
+                  </Sequence>
+                </If.Else>
+              </If>
+            </Sequence>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,166" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[&quot;Captcha: &quot;+CaptchaText]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.OCREngine>
+        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+          </ActivityFunc.Argument>
+        </ActivityFunc>
+      </uix:NApplicationCard.OCREngine>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 736" BrowserType="Edge" ContentHash="LWfSYNmg3kG2Xe9NxS_QlQ" IconBase64="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" InformativeScreenshot="0e1b81f6d998979a20eaeab71c8d3dbc.jpg" Reference="zHM_MHonYECrlrhSQ6-q1Q/mOh56c_ZzkS6LlRNAjQ4Ng" Selector="&lt;html app='msedge.exe' title='Main Page' /&gt;" Url="[in_Config(&quot;URL&quot;).ToString]" Version="V2">
+          <uix:TargetApp.Arguments>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.Arguments>
+          <uix:TargetApp.WorkingDirectory>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.WorkingDirectory>
+        </uix:TargetApp>
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

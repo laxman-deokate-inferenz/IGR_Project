@@ -1,0 +1,14 @@
+﻿{
+  "Name": "wds-ic-send-filled",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "XSwvp-rHakuPm7znL5XJOQ",
+  "Reference": "q-cv-y4mSESjSFDGWyXq3w/XSwvp-rHakuPm7znL5XJOQ",
+  "ParentRef": "q-cv-y4mSESjSFDGWyXq3w/ow6fy8Dcnka1mNUx7yqRfw",
+  "Created": "2026-03-18T19:01:17.0142626Z",
+  "Updated": "2026-03-18T19:01:17.0142626Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.22.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

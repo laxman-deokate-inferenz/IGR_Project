@@ -1,0 +1,12 @@
+﻿{
+  "Name": "I Love PDF Merge Files",
+  "Type": "App",
+  "Id": "NC1jVJ7wsUaMJwdVkGwf9Q",
+  "Reference": "q-cv-y4mSESjSFDGWyXq3w/NC1jVJ7wsUaMJwdVkGwf9Q",
+  "Created": "2026-03-18T19:37:02.2786464Z",
+  "Updated": "2026-03-18T19:37:02.2786464Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.22.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

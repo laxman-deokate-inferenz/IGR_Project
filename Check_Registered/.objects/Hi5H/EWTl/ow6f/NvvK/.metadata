@@ -1,0 +1,13 @@
+﻿{
+  "Name": "search-refreshed-thin(1)",
+  "Type": "Element",
+  "Id": "NvvKqbbXYEuK-cmy2haHOA",
+  "Reference": "q-cv-y4mSESjSFDGWyXq3w/NvvKqbbXYEuK-cmy2haHOA",
+  "ParentRef": "q-cv-y4mSESjSFDGWyXq3w/ow6fy8Dcnka1mNUx7yqRfw",
+  "Created": "2026-03-18T19:58:50.0527408Z",
+  "Updated": "2026-03-18T19:58:50.0527408Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.22.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
